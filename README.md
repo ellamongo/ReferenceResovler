@@ -62,4 +62,29 @@ The analyzer includes error handling for:
 - File parsing errors
 - Maven configuration issues
 
-All errors are logged with appropriate context information. 
+All errors are logged with appropriate context information.
+
+## Running Without Building
+
+You can run the analyzer directly using Maven without building the JAR file by using the following command:
+
+```bash
+mvn exec:java -Dexec.mainClass="com.example.ReferenceAnalyzerMain" -Dexec.args="/path/to/your/maven/project"
+```
+
+Replace `/path/to/your/maven/project` with the path to the Maven project you want to analyze.
+
+This command will:
+- Compile the code if necessary
+- Run the analyzer directly
+- Output results as described below
+
+## Running Tests
+
+To run the tests for the project, use the following command:
+
+```bash
+mvn test
+```
+
+This will execute all the tests defined in the project. 
