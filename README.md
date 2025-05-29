@@ -62,7 +62,7 @@ The analyzer includes error handling for:
 - File parsing errors
 - Maven configuration issues
 
-All errors are logged with appropriate context information.
+All errors are logged with appropriate context information. 
 
 ## Running Without Building
 
